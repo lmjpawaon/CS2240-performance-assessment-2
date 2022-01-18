@@ -1,0 +1,49 @@
+:root{
+    --color-primary: rgb(8,34,141);
+}
+
+/*Navbar*/
+#mainNav{
+    background-color: var(--color-primary)!important;
+    padding:0rem;
+}
+
+header{
+    color:white;
+}
+
+.carousel-item > .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.carousel-item > .carousel-caption >p{
+    font-size: 20px;
+}
+
+#programsOffered{
+    padding-top:7.5rem;
+    min-height:50vh;
+}
+
+#programsHeading, #formHeading{
+    background-color: var(--color-primary)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+#mainForm{
+    min-height:100vh;
+}
+
+#mainForm>.card{
+    padding-top:5rem;
+}
+
+#formContent{
+    padding-top: 5rem;
+}
+
