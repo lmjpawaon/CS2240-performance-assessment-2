@@ -14,6 +14,7 @@
     <title>PAWAON - Performance Assessment 2</title>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container px-5">
             <a class="navbar-brand" href="https://www.addu.edu.ph/"><img src="./assets/adduseal.png" id="test" style="height:90px"></a>
@@ -27,38 +28,45 @@
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/bgimage.jpg" class="d-block w-100" style="height: 660px" alt="...">
+                <img src="./assets/bgimage.jpg" class="d-block w-100" style="height:660px;object-fit: cover;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h1>Enroll Now in Ateneo!</h1>
                   <p>Take the Undergraduate Admission Form to Enlist for the next School Year.</p>
                   <a id="startbtn" href="#mainForm"><button class="btn btn-outline-light">Enlist Now</button></a>
                 </div>
               </div>
+
               <div class="carousel-item">
-                <img src="./assets/bgimage.jpg" class="d-block w-100" style="height: 660px" alt="...">
+                <img src="./assets/bgimage2.jpg" class="d-block w-100" style="height:660px;object-fit: cover;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <h1>Choose Ateneo!</h1>
+                  <p>The Ateneo program of studies seeks to develop the “whole person,” sound in mind and body.</p>
                 </div>
               </div>
+
               <div class="carousel-item">
-                <img src="./assets/bgimage.jpg" class="d-block w-100" style="height: 660px" alt="...">
+                <img src="./assets/bgimage3.jpg" class="d-block w-100" style="height:660px;object-fit: cover;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h1>Giving to Ateneo</h1>
+                  <p>The Ateneo is engaged with different advocacies that impact lives in Mindanao. You can contribute to our advocacies  by donating.</p>
                 </div>
               </div>
+
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
+
             <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
+
           </div>
     </header>
 
@@ -79,7 +87,10 @@
                         <img class="card-img-top" id="imagePreview">
                         <div class="card-body">
                             <h5 class="card-title">Upload Image</h5>
-                            <input type="file" class="form-control" id="imageUpload" accept="image/*" onchange="showPreview(event);" >
+                            <input type="file" class="form-control needs-validation" id="imageUpload" accept="image/*" onchange="showPreview(event);">
+                            <div class="invalid-feedback">
+                              Enter a valid image.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,9 +226,29 @@
                         </div>
 
                         <div class="col-12">
-                          <button class="btn btn-primary" type="submit">Submit form</button>
+                          <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit form</button>
                         </div>
                       </form>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Application Saved!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        We will keep in touch with you for further updates. Have a great day and God Bless!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+
                     </div>
                 </div>
           </div>
