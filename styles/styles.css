@@ -70,3 +70,39 @@ header{
 #formContent{
     padding-top: 5rem;
 }
+
+#programsOffered>.row>.col-md-2>.container>img{
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    z-index: 1;
+}
+
+.container, .program-img, .text{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.container:hover .program-img, .container:hover .text{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+#programsOffered>.row>.col-md-2>.container>span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 150px; 
+    height: 150px; 
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    color:var(--color-primary);
+}
