@@ -1,21 +1,57 @@
 :root{
-    --color-primary: rgb(8,34,141);
+    --dark-violet: rgb(64,42,99);
+    --light-dark-violet: rgb(60,32,105);
+    --light-violet: rgb(127,44,203);
+    --magenta-violet: rgb(156,65,126);
 }
 
-/*Navbar*/
-#mainNav{
-    background-color: var(--color-primary)!important;
-    padding:0rem;
+*{
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 html{
     overflow-x:hidden;
+    scroll-behavior: smooth;
+    
 }
 
 header{
     color:white;
 }
 
+section{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:100px 20vh;
+    min-height:100vh;
+}
+
+
+/*Navbar*/
+#mainNav{
+    background-color: var(--dark-violet)!important;
+    padding:1rem;
+}
+.container ul li{
+    margin: 10px 30px;
+}
+.nav-link{
+    color:white !important;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-account .nav-link{
+    color: white !important;;
+}
+
+.navbar>.container>a{
+   color:white !important;
+   text-decoration:none !important;
+   font-weight:bold;
+
+}
 .carousel-item > .carousel-caption{
     width:100%;
     height:100%;
@@ -31,20 +67,108 @@ header{
     font-size: 20px;
 }
 
-#programsOffered{
-    padding-top:10rem;
+.landingHero{
     min-height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-violet);
+}
+
+h1{
+    font-family: 'Open Sans',  sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 60px !important;
+}
+
+#herow{
+    margin-top:5rem !important;
+}
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill{
+    fill: #FFFFFF;
+}
+
+
+.text-left{
+    color:white !important;
+}
+
+.btn{
+   width:200px !important;
+   margin-left:15px; 
+}
+
+#mainForm{
+    display:block;
+    z-index:-1;
+}
+
+#formContent{
+    position:absolute;
+    left:55rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:-50rem;
+   
+}
+
+#cardForm{
+    /*background-image: linear-gradient(270deg, var(--dark-violet), var(--magenta-violet));
+    color:white;*/
+    box-shadow: 0 5px 10px  rgb(0 0 0 / 0.2);
+}
+
+#submitBtn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#featuresOffered{
+    min-height:75vh;
+    display:flex;
+}
+
+#featuresOffered .card:hover{
+    transform:translateY(-15px);
+    transition: transform 0.3s;
 }
 
 #programsHeading, #formHeading{
-    background-color: var(--color-primary)!important;
+    background-color: var(--light-violet)!important;
     display: flex;
     justify-content: center;
     align-items: center;
     color:white;
 }
 
-#programsOffered>.row{
+#featuresOffered>.row{
     padding-left:3.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -53,25 +177,13 @@ header{
     align-items: center;
 }
 
-#programsOffered>.row>.col-md-2>img{
+#featuresOffered>.row>.col-md-2>img{
     width: 150px; 
     height: 150px; 
     object-fit: cover;
 }
 
-#mainForm{
-    min-height:100vh;
-}
-
-#mainForm>.card{
-    padding-top:5rem;
-}
-
-#formContent{
-    padding-top: 5rem;
-}
-
-#programsOffered>.row>.col-md-2>.container>img{
+#featuresOffered>.row>.col-md-2>.container>img{
     width: 150px; 
     height: 150px; 
     object-fit: cover;
@@ -90,7 +202,7 @@ header{
 	transform: scale(1.3);
 }
 
-#programsOffered>.row>.col-md-2>.container>span{
+#featuresOffered>.row>.col-md-2>.container>span{
     position: absolute;
     top: 0;
     left: 0;
@@ -100,9 +212,18 @@ header{
     height: 150px; 
     color: black;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.5);
-    color:var(--color-primary);
+    color:var(--light-violet);
 }
+
+footer{
+    background-color: var(--dark-violet);
+    padding:1rem;
+    color:white;
+}
+
+
+
+
