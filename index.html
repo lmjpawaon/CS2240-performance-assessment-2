@@ -55,17 +55,13 @@
   <section class="landingHero">
     <div class="container hero">
       <div class="row" id="herow">
-          <h1 class="text-left">THE BIWEEKLY BYTE.</h1>
-          <p class="text-left" id="description">The <Strong>Official ACCSS Newsletter Publication</Strong>. From your complementary<br>yet comprehensive and exclusive ebook <strong>Thinking Like a Programmer</strong><br>to <strong>Google interview-level</strong> coding challenges, we wish to bring you an <br>organic, interesting, and fun subscription worth your while. </p>
-          <button class="btn btn-outline-light">SIGN UP</button>
+        <div class="col-sm-12 col-md-6">
+          <h1 class="text-left">ATENEO CIRCLE OF COMPUTER SCIENCE STUDENTS</h1>
+          <p class="text-justify" id="description">Being the <strong>only</strong> club of Computer Studies for the CS, IT, DS, and IS students, ACCSS and its members work to assure that all students from 1st year to 4th year will have better and enjoyable college experiences by giving them activities that mold them to achieve academic excellence, social awareness and spiritual growth.</p>
+          <button class="btn btn-outline-light">ENLIST NOW</button>
+        </div>
       </div>
     </div>
-    <!--
-    <div class="wave">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-      </svg>
-    </div>-->
   </section>
   <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,500 C 0,500 0,166 0,166 C 68.80382775119617,200.85167464114832 137.60765550239233,235.70334928229664 242,215 C 346.39234449760767,194.29665071770336 486.37320574162675,118.03827751196171 582,113 C 677.6267942583733,107.96172248803829 728.8995215311005,174.14354066985646 827,194 C 925.1004784688995,213.85645933014354 1070.0287081339713,187.38755980861245 1180,175 C 1289.9712918660287,162.61244019138755 1364.9856459330144,164.3062200956938 1440,166 C 1440,166 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="#402a6388" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 250)"></path><path d="M 0,500 C 0,500 0,333 0,333 C 94.73684210526315,327.91866028708137 189.4736842105263,322.8373205741627 289,328 C 388.5263157894737,333.1626794258373 492.8421052631578,348.5693779904306 601,355 C 709.1578947368422,361.4306220095694 821.1578947368421,358.8851674641149 908,368 C 994.8421052631579,377.1148325358851 1056.5263157894738,397.8899521531101 1141,394 C 1225.4736842105262,390.1100478468899 1332.7368421052631,361.555023923445 1440,333 C 1440,333 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="#402a63ff" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 250)"></path></svg>
   
@@ -162,10 +158,6 @@
                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="year4" value="option3" required>
                       <label class="form-check-label" for="year4">4</label>
                     </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="year5" value="option3" required>
-                      <label class="form-check-label" for="year5">5</label>
-                    </div>
                 </div>
   
                   <div class="col-12">
@@ -201,7 +193,7 @@
                   </div>
   
                   <div class="col-12" id="submitBtn">
-                    <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">REGISTER</button>
+                    <button id="submitTime" class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">REGISTER</button>
                   </div>
                 </form>
               <!-- Modal -->
@@ -211,68 +203,102 @@
   </div>
   <!--</section>-->
 
+  <!--
   <section class="features "id="featuresOffered">
-    <div class="row row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src="./assets/artssciences.jpg" class="card-img-top" alt="...">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="./assets/calendar.jpg" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">BIWEEKLY NEWSLETTER</h5>
+            <p class="card-text">Recieve newest issues of the Biweekly Byte every 1<sup>st</sup> and 3<sup>rd</sup> Week of the Month.</p>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="./assets/programmer.jpg" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a short card.</p>
+            <h5 class="card-title">BUILD A COMMUNITY</h5>
+            <p class="card-text">Learn stories and inspirations from fellow Computer Studies Students with their <i>Featurette Section</i></p>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="./assets/programmingjob.jpg" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">INTERESTING OPPORTUNITIES</h5>
+            <p class="card-text">Recieve Opportunites such as webinars and workshops, exclusive to Computer Studies Students only</p>
           </div>
         </div>
       </div>
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="./assets/ctci.jpg" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">LEARNING MASTERY</h5>
+            <p class="card-text">Experience Google-Like Coding Interviews every publication and get a change to be interviewed as the best solution in the problem</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-
+  -->
     <header class="studentListIntro">
         <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
 
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/bgimage.jpg" class="d-block w-100" style="height:660px;object-fit: cover;" alt="...">
+                <img src="./assets/accsseminar.jpg" class="d-block w-100" style="height:660px;object-fit: cover;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h1>Enroll Now in Ateneo!</h1>
-                  <p>Take the Undergraduate Admission Form to Enlist for the next School Year.</p>
-                  <a id="startbtn" href="#mainForm"><button class="btn btn-outline-light">Enlist Now</button></a>
+                  <h1>Create Better Learning Environments</h1>
+                  <p>As an academic club, our main goal is to provide our members with opportunities and initiatives <br>for academic and extracurricular growth.</p>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <img src="./assets/bgimage2.jpg" class="d-block w-100" style="height:660px;object-fit: cover;" alt="...">
+                <img src="./assets/accssmembers.jpg" class="d-block w-100" style="height:660px;object-fit: cover;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h1>Choose Ateneo!</h1>
-                  <p>The Ateneo program of studies seeks to develop the “whole person,” sound in mind and body.</p>
+                  <h1>Cultivate Community Building</h1>
+                  <p>Being the only club of Computer Studies students, ACCSS will work to assure that all students <br>from 1st year to 4th year will have better and enjoyable college experiences.</p>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <img src="./assets/bgimage3.jpg" class="d-block w-100" style="height:660px;object-fit: cover;" alt="...">
+                <img src="./assets/accsssad.png" class="d-block w-100" style="height:660px;object-fit: cover;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h1>Giving to Ateneo</h1>
-                  <p>The Ateneo is engaged with different advocacies that impact lives in Mindanao. You can contribute to our advocacies  by donating.</p>
+                  <h1>Experience Excellence</h1>
+                  <p>ACCSS explores different fields in the tech industry through conducting seminars, workshops, and other events for subjects <br>like multimedia, cybersecurity, web development, college thesis writing, and more.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/golimits.jpg" class="d-block w-100" style="height:660px;object-fit: cover;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Going Beyond Limits</h1>
+                  <p>We recognize the importance of student experiences in the Cluster; using our own experiences to <br>help cultivate better learning environments for our members.</p>
                 </div>
               </div>
 
@@ -291,15 +317,15 @@
           </div>
     </header>
 
-    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,500 C 0,500 0,166 0,166 C 81.9025641025641,139.5076923076923 163.8051282051282,113.01538461538462 248,129 C 332.1948717948718,144.98461538461538 418.68205128205125,203.44615384615386 501,196 C 583.3179487179488,188.55384615384614 661.4666666666668,115.2 728,115 C 794.5333333333332,114.8 849.451282051282,187.75384615384615 919,220 C 988.548717948718,252.24615384615385 1072.7282051282052,243.78461538461536 1162,228 C 1251.2717948717948,212.21538461538464 1345.6358974358973,189.10769230769233 1440,166 C 1440,166 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="#402a6388" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,500 C 0,500 0,333 0,333 C 59.93333333333334,320.0435897435898 119.86666666666667,307.0871794871795 211,309 C 302.1333333333333,310.9128205128205 424.4666666666667,327.69487179487174 509,348 C 593.5333333333333,368.30512820512826 640.2666666666667,392.1333333333334 721,379 C 801.7333333333333,365.8666666666666 916.4666666666667,315.77179487179484 1004,316 C 1091.5333333333333,316.22820512820516 1151.8666666666666,366.7794871794872 1220,378 C 1288.1333333333334,389.2205128205128 1364.0666666666666,361.1102564102564 1440,333 C 1440,333 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="#402a63ff" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,133 0,133 C 80.42105263157893,147.1818181818182 160.84210526315786,161.36363636363635 261,169 C 361.15789473684214,176.63636363636365 481.0526315789474,177.72727272727272 590,178 C 698.9473684210526,178.27272727272728 796.9473684210526,177.72727272727275 900,164 C 1003.0526315789474,150.27272727272725 1111.157894736842,123.36363636363637 1202,116 C 1292.842105263158,108.63636363636363 1366.421052631579,120.81818181818181 1440,133 C 1440,133 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#402a6388" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,400 C 0,400 0,266 0,266 C 104.35406698564591,278.755980861244 208.70813397129183,291.511961722488 312,285 C 415.29186602870817,278.488038277512 517.5215311004785,252.70813397129186 599,233 C 680.4784688995215,213.29186602870814 741.2057416267943,199.65550239234452 830,217 C 918.7942583732057,234.34449760765548 1035.6555023923445,282.66985645933016 1142,296 C 1248.3444976076555,309.33014354066984 1344.1722488038276,287.6650717703349 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#402a63ff" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
     <footer class="site-footer"> 
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            <h1>ACCSS</h1>
+            <p class="text-justify">The Ateneo Circle of Computer Studies Students is the sole academic club of the Computer Studies Cluster of the Ateneo de Davao University . As an academic club, our main goal is to provide our members with opportunities and initiatives for academic and extracurricular growth; in order to get ahead in the academe and to excel in the workplace.</p>
           </div>
-
+          <!--
           <div class="col-xs-6 col-md-3">
             <h6>Categories</h6>
             <ul class="footer-links">
@@ -322,30 +348,29 @@
               <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
             </ul>
           </div>
-        </div>
+        </div>-->
         <hr>
       </div>
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-         <a href="#">Scanfcode</a>.
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+            <a href="#">Ateneo Circle of Computer Science Students.</a>.
             </p>
           </div>
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              <li><a class="facebook" href="https://www.facebook.com/addu.accss.official"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/addu_accss"><i class="fab fa-twitter"></i></a></li> 
+              <li><a class="discord" href="https://discord.gg/6WHcB82T"><i class="fab fa-discord"></i></a></li> 
             </ul>
           </div>
         </div>
       </div>
 </footer>
 
-
+    <!--form validation for forms (included in bootstrap documentation)-->
     <script>
       (function() {
           'use strict';
