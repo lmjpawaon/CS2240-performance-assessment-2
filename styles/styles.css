@@ -19,7 +19,7 @@ header{
     color:white;
 }
 
-section{
+.landingHero{
     position:relative;
     display:flex;
     flex-direction:column;
@@ -81,6 +81,12 @@ h1{
     font-size: 50px !important;
 }
 
+h4{
+    font-family: 'Open Sans',  sans-serif !important;
+    font-weight: 800 !important;
+}
+
+
 .landingHero h1:hover{
     transform:translateY(-15px);
     transition: transform 0.3s;
@@ -104,7 +110,6 @@ h1{
     }   
 
 }
-
 
 .wave{
     position: absolute;
@@ -172,17 +177,36 @@ h1{
     justify-content:center;
 }
 
-#featuresOffered{
+#discordImg{
+    width: 100px;
+    height: 100px;
+}
+
+#linkedInImg{
+    width: 100px;
+    height: 100px;
+}
+
+#featuresOffered .box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: var(--dark-violet);
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    width: 100%;
+}
+
+/*#featuresOffered{
     min-height:75vh;
     display:flex;
-}
+}*/
 
-#featuresOffered .card{
+#featuresOffered .box{
     box-shadow: 0 5px 10px  rgb(0 0 0 / 0.2);
-    
 }
 
-#featuresOffered .card:hover, #cardForm:hover{
+#featuresOffered .box:hover, #cardForm:hover{
     transform:translateY(-15px);
     transition: transform 0.3s;
 }
