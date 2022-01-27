@@ -29,7 +29,6 @@ header{
 }
 
 #downloadStarterBook{
-  z-index: 99999;
   text-align:center;
 }
 
@@ -61,29 +60,21 @@ header{
 
 }
 
-#accsslogo{
-    visibility:clamp(hidden,2vh,visible);
-
-}
-.carousel-item > .carousel-caption{
-    width:100%;
-    height:100%;
-    top: 0;
-    left:0;
-    right:0;
-    bottom:0;
-    padding-top:17rem;
-    background-color:rgba(0, 0, 0, 0.70);
-}
-
-.carousel-item > .carousel-caption >p{
-    font-size: 22px;
-    text-align: center;
-    margin-left:clamp(10rem,2vh,20rem);
-    margin-right:clamp(10rem,2vh,20rem);
+@media only screen and (max-width:780px){
+    .navbar-brand{
+        font-size:15px!important;
+    }
 }
 
 
+@media only screen and (max-width:480px){
+  #accsslogo{
+      height:20px!important;
+  }
+  .carousel{
+      width:100%!important;
+  }
+}
 
 .landingHero{
     min-height:50vh;
@@ -120,37 +111,6 @@ h4{
     justify-content: center;
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) { 
-    #formContent{
-        left:0rem;
-        
-        margin-top:0rem;
-    }   
-
-}
-
-.wave{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.wave svg{
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    transform: rotateY(180deg);
-}
-
-.wave .shape-fill{
-    fill: #FFFFFF;
-}
-
-
 .text-left, .text-justify{
     color:white !important;
 }
@@ -169,21 +129,7 @@ h4{
     display:block;
 }
 
-/*
-#formContent{
-    position:absolute;
-    left:55rem;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    margin-top:-50rem;
-   
-}*/
-
 #cardForm{
-    /*background-image: linear-gradient(270deg, var(--dark-violet), var(--magenta-violet));
-    color:white;*/
     box-shadow: 0 5px 10px  rgb(0 0 0 / 0.2);
     border-radius: 25px;
 }
@@ -289,6 +235,25 @@ h4{
     background-color: rgba(255, 255, 255, 0.5);
     color:var(--light-violet);
 }
+
+.carousel-item > .carousel-caption{
+  width:100%;
+  height:100%;
+  top: 0;
+  left:0;
+  right:0;
+  bottom:0;
+  padding-top:17rem;
+  background-color:rgba(0, 0, 0, 0.70);
+}
+
+.carousel-item > .carousel-caption >p{
+  font-size: 22px;
+  text-align: center;
+  margin-left:clamp(10rem,2vh,20rem);
+  margin-right:clamp(10rem,2vh,20rem);
+}
+
 
 .card-img{
     width:100%;
@@ -446,6 +411,3 @@ footer{
     font-weight:600
   }
 }
-
-
-
